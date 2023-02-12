@@ -1,0 +1,220 @@
+body
+{
+	margin-top:106px;
+}
+.navbar
+{
+	box-shadow:5px 5px 5px #23D5AB;
+	opacity:0.9;
+	color:#fff;
+}
+.navbar .nav-item
+{
+	font-size:1.5em;
+	padding-right:20px;
+}
+#showcase
+{
+	background:url('../img/pexels-enrique-hoyos-14922898.jpg');
+	min-height:600px;
+	position:relative;
+}
+#showcase .primary-overlay
+{
+	background:rgba(210,149,140,0.8);
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+
+}
+.info-header
+{
+	width:50%;
+	margin:auto;
+	border-bottom:1px solid #ddd;
+}
+
+#a1
+{
+  position: absolute;
+  top:470px;
+  left:290px;
+  transform:translate(-50%,-50%);
+  width:200px;
+  height:50px;
+  text-align:center;
+  transform-style: preserve-3d;
+  perspective:1000px;
+  transform-origin:center center;
+}
+#a1 span
+{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  display:block;
+  text-align:center;
+  line-height:50px;
+  font-size:18px;
+  background:rgba(255,255,255,0.1);
+  transform-style:preserve-3d;
+  backface-visibility:hidden;
+  border-radius:30px;
+  text-transform: uppercase;
+  color:#000;
+  transition:1s;
+}
+#a1 span.front
+{
+  transform:rotateX(0deg) translateZ(20px);
+  box-shadow:3px 2px 2px pink;
+}
+#a1:hover span.front
+{
+  transform:rotateX(-180deg) translateZ(20px);
+}
+
+#a1 span.back
+{
+  transform:rotateX(180deg) translateZ(20px);
+  box-shadow:3px 2px 2px yellow;
+}
+#a1:hover span.back
+{
+  transform:rotateX(0deg) translateZ(20px);
+}
+#a1 span.center
+{
+  background:linear-gradient(to left,#ADFFF3,#EEDCC4);
+}
+
+#a1 span.center:before
+{
+  content:'';
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:linear-gradient(to left,#ffdd1f,#ADFFF3);
+  border-radius:30px;
+  transform:translateZ(-1px);
+}
+#a1:hover span.center
+{
+  transform:rotateX(-180deg);
+}
+
+#box .card-body:hover
+ {
+	font-size:17px;
+	color: #fff;
+	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB,#23E92C);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 5s ease infinite;
+	-moz-animation: Gradient 5s ease infinite;
+	animation: Gradient 5s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+#box img
+{
+	margin-top:-70px;
+}
+#box .card
+ {
+
+	 box-shadow:5px 5px 6px #23D5AB;
+ }
+#authors .fa
+{
+	font-size:25px;
+}
+#authors .card:hover
+{
+	background:#3292a6;
+	color:#fff;
+}
+#authors .card:hover .fa
+{
+
+	color:#fff;
+}
+#authors .card:hover
+{
+
+	color:#fff;
+}
+#touch img
+{
+	margin-top:110px;
+}
+#footer .copy
+{
+	padding-right:130px;
+}
+.carousel-indicators li
+{
+  height:20px;
+  width:20px;
+  border-radius:12px;
+  margin-left:20px;
+  background:rgba(0,0,0,1);
+}
+.carousel-control-prev
+{
+  background:rgba(0,0,0,1);
+  width:60px;
+  height:60px;
+  margin-top:200px;
+  margin-left:10px;
+  border-radius:5px;
+}
+.carousel-control-next
+{
+  background:rgba(0,0,0,1);
+  width:60px;
+  height:60px;
+  margin-top:200px;
+  margin-right:10px;
+  border-radius:5px;
+}
